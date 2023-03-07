@@ -16,7 +16,7 @@ const refurbSchema = new Schema({
         required: true
     },
     failure: {
-        type: string,
+        type: String
     }
 })
 

@@ -8,16 +8,16 @@
      rel="stylesheet" 
      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
      crossorigin="anonymous">
-    <title>Node Database</title>
+    <title>Blog</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="card-title mt-4">Node List</h1>
-        
-        <div class="mt-2">
-        <a href="./nodes" class="btn btn-primary d-inline">View List</a>
-        <a href="./new" class="btn btn-success d-inline">New Node</a>
-        </div>
-    </div></div>
+        <h1 class="mb-4">New Refurb Entry</h1>
+
+        <form action="/new" method="POST">
+            <%- include('_form_fields') %>
+        </form>
+
+    </div>
 </body>
 </html>
